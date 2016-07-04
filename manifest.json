@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+
+	"name": "RickRollMeNot",
+	"description": "This extension will alert you when you are about to be RickRoll'd",
+	"version": "1.0",
+
+	"browser_action": {
+		
+		"default_title": "RickRollMeNot"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"css": ["animate.css"],
+			"js": ["tool.js"]
+		}
+
+	]
+
+}
